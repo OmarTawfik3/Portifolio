@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link:active {
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+}
+
+
+.home{
+    margin-top:0;
+    background-image: url(../images/image.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#home-sec {
+    padding: 0;
+}
+
+#home-sec .home {
+    margin-top: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100vh - 56px); /* 56px is the height of the navbar */
+}
+
+.caption h1 {
+    font-size: 60px;
+    color: #ffffff; /* Ensuring the text color is white */
+}
+
+
+.name{
+    color: #7cacf3;
+}
+.home-layer{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.animation-header:after{
+    content: "|";
+    animation-name: subtitle;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.caption h1{
+    font-size: 60px;
+}
+@keyframes subtitle {
+    0%{content: '|';}
+    2%{content: 'f|';}
+    4%{content: 'fr|';}
+    6%{content: 'fro|';}
+    8%{content: 'fron|';}
+    10%{content: 'front|';}
+    15%{content: 'fronte|';}
+    20%{content: 'fronten|';}
+    25%{content: 'frontend|';}
+    30%{content: 'fronten|';}
+    32%{content: 'fronte|';}
+    35%{content: 'front|';}
+    39%{content: 'front|';}
+    41%{content: 'fron|';}
+    44%{content: 'fro|';}
+    46%{content: 'fr|';}
+    48%{content: 'f|';}
+    50%{content: '|';}
+    55%{content: 'D|';}
+    59%{content: 'De|';}
+    62%{content: 'Dev|';}
+    66%{content: 'Deve|';}
+    69%{content: 'Devel|';}
+    72%{content: 'Develo|';}
+    75%{content: 'Develop|';}
+    79%{content: 'Develope|';}
+    82%{content: 'Developer|';}
+    84%{content: 'Develope|';}
+    87%{content: 'Develop|';}
+    90%{content: 'Develo|';}
+    92%{content: 'Devel|';}
+    94%{content: 'Deve|';}
+    96%{content: 'Dev|';}
+    98%{content: 'De|';}
+    99%{content: 'D|';}
+    100%{content: '|';}
+}
+.information-link{
+    /* border: 2px solid black; */
+    text-decoration: none;
+    color: white;
+    /* padding: 10px; */
+  /* margin-top: 1000px; */
+}
+.home_para{
+    font-size: 25px;
+}
+
+
+#back .navbar {
+    background-color: #1e2a5c; 
+}
+
+#back .navbar-brand {
+    font-family: 'Oswald', sans-serif; 
+    color: #ffffff; 
+    border: 2px solid white; 
+    padding: 5px 10px; 
+}
+
+#back .navbar-toggler-icon {
+    color: #ffffff;
+}
+
+#back .navbar-nav .nav-link {
+    color: #ffffff; 
+    position: relative;
+    cursor: pointer; 
+    transition: transform 0.3s ease;
+}
+
+#back .navbar-nav .nav-link:hover {
+    color: #ffffff; 
+    transform: translateY(-2px); 
+}
+
+#back .navbar-nav .nav-link::before,
+#back .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#back .navbar-nav .nav-link:hover::before,
+#back .navbar-nav .nav-link:hover::after {
+    opacity: 1;
+}
+
+#back .navbar-nav .nav-link::before {
+    z-index: 1; 
+}
+
+#back .navbar-nav .nav-link::after {
+    z-index: 2; 
+}
+
+.language {
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.language-name {
+    display: inline-block;
+    width: 120px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.skill {
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.skill-name {
+    display: inline-block;
+    width: 120px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.HTML {
+    width: 100%;
+    background-color: #4CAF50;
+}
+.CSS {
+    width: 90%;
+    background-color: #518753;
+}
+
+.java {
+    width: 40%;
+    background-color: #f44336;
+}
+.bar {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.fluent {
+    width: 100%;
+    background-color: #4CAF50;
+}
+
+.b2 {
+    width: 85%;
+    background-color: #518753;
+}
+
+
+.a1 {
+    width: 40%;
+    background-color: #f44336;
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:active {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    background-color: #1e2a5c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.portfolio-item {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+#portfolio h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+
+footer {
+    background-color: #1e2a5c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Oswald', sans-serif; 
+}
+
+
+.smaller-image {
+    max-width: 200px; /* Adjust the width as needed */
+    height: 100px; /* Ensure aspect ratio is maintained */
+}
+
+
+.profile-box {
+    border: 2px solid #1e2a5c;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin-right: 20px;
+}
+.profile-box:hover{
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+}
+
+.profile-box img {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border-color: transparent;
+    color: #5c6874; 
+    font-family: 'Oswald', sans-serif; 
+}
+
+
+.portfolio-item {
+    height: 300px; /* Adjust the height as needed */
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
+
+.smaller-image {
+    max-width: 200px; /* Adjust the width of the image */
+    height: auto; /* Ensure aspect ratio is maintained */
+}
+
+.mr-md-5 {
+    margin-right: 100px; /* Margin between the projects */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.1);
+}
+
+
+#contact {
+    color: #fff;
+    background-color: #2e2e63; 
+    padding: 50px 0;
+    font-family: 'Oswald', sans-serif; 
+    margin-top: 130px;
+    
+}
+
+.social-icon {
+    width: 50px; 
+    height: auto;
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+}
+
+.social-icon:hover {
+    transform: scale(1.1); 
+}

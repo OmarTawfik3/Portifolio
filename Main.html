@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">Q
+    <link rel="stylesheet" href=".//css/styles.css">
+</head>
+<body>
+    
+    <div id="back">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <!-- Brand on the Left -->
+                <a class="navbar-brand" href="#">T a w f i k</a>
+                <!-- Toggler Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Links on the Right -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link btn btn-transparent btn-primary" onclick="applyTransition(this)">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link btn btn-transparent btn-primary" onclick="applyTransition(this)">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link btn btn-transparent btn-primary" onclick="applyTransition(this)">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                // Apply transition effect
+                targetElement.style.transition = "transform 0.3s ease";
+                targetElement.style.transform = "scale(1.1)";
+
+                // Scroll to the target element
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
+
+    </script>
+    
+    
+
+<section id="home-sec">
+    <div class="home">
+
+      <div class="home-layer h-100 d-flex justify-content-center align align-items-center">
+        <div class="container">
+        <div class="caption text-white text-center mt-5 bt-5">
+          <h1 class="fw-bold ">Hello, Iam <span class="name">Omar Tawfik</span></h1>
+          <h3 class="animation-header fw-bold">I am </h3>
+          <p class="home_para d-flex justify-content-center align align-items-center mt-4"> </p>
+          </span></a></button>  
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <section id="about" class="py-5">
+                    <div class="profile-box p-4">
+                        <img src=".//images/profile.jpg" alt="Profile Photo" class="img-fluid rounded-circle mb-4" style="width: 200px;">
+                        <h2 class="text-center">Brief</h2>
+                        <p class="text-center mb-4">Dedicated and motivated computer science student seeking a Web and Mobile-Application Development.</p>
+                        <div class="text-center">
+                            <a href="Omar Mohammed Tawfik CV.docx" download class="btn btn-primary">Download CV</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section id="languages" class="py-5">
+                    <h2 class="text-center">Languages</h2>
+                    <div class="language">
+                        <span class="language-name">Arabic</span>
+                        <div class="bar">
+                            <div class="progress fluent"></div>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <span class="language-name">English</span>
+                        <div class="bar">
+                            <div class="progress b2"></div>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <span class="language-name">German</span>
+                        <div class="bar">
+                            <div class="progress a1"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills" class="py-5">
+                    <h2 class="text-center">Skills</h2>
+                    <div class="skill">
+                        <span class="skill-name">HTML</span>
+                        <div class="bar">
+                            <div class="progress HTML"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">CSS</span>
+                        <div class="bar">
+                            <div class="progress CSS"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="bar">
+                            <div class="progress java"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="title text-center">Some of Recent Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portfolio-item text-center mb-4 mr-md-5"> <!-- Added mr-md-5 class -->
+                        <img src=".//images/hotel.png" alt="Project 1" class="img-fluid">
+                        <h3>Hotel Reservation</h3>
+                        <p>Help people to find the most suitable hotel to reserve in it.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item text-center mb-4">
+                        <img src=".//images/scci.jpg" alt="Project 2" class="img-fluid smaller-image">
+                        <h3>SCCI Mobile-Application</h3>
+                        <p>Mobile-Application for a student activity to help them to take the attendance and send notifications for the participants and allow them to upload their assignments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h3 class="text-center">Contact Me</h3>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <a href="https://www.instagram.com/omartawfiik_?igsh=ZHc2aXJ2bXU1YWRy&utm_source=qr" target="_blank"><img src=".//images/insagrams.png" alt="Instagram" class="social-icon mr-3"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100005281594133&mibextid=LQQJ4d" target="_blank"><img src=".//images/facebook.png" alt="Facebook" class="social-icon mr-3"></a>
+                    <a href="https://www.linkedin.com/in/omar-tawfik-172963252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src=".//images/linkdin.png" alt="LinkedIn" class="social-icon"></a>
+                </div>
+            </div>
+        </div>
+        <br>
+            <div class="permission d-flex justify-content-center align align-items-center"> 
+                <p>T A W F I K    -    <span class="name">   2 0 2 4 </span></p>
+             </div>
+    </section>
+    
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
